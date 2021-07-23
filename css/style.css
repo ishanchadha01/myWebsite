@@ -1,6 +1,5 @@
 body{
-	position: relative;
-    background-color: black;
+    background-color: #159296;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -416,6 +415,7 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
     color: white;
     font-weight: 400;
     font-size: 2.4em;
+    padding: 50px;
 }
 #timeline-content {
     margin-top: 50px;
@@ -438,7 +438,7 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
     list-style: none;
     text-align: left;
     font-weight: 100;
-    max-width: 30%;
+    max-width: 60%;
 }
 .timeline h1 {
     font-family: "Saira", sans-serif;
@@ -471,7 +471,7 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
     top: 0;
 }
 .timeline .event:before {
-    left: -217.5px;
+    left: -250px;
     color: rgba(255, 255, 255, 0.4);
     content: attr(data-date);
     text-align: right;
@@ -491,8 +491,17 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
     top: 5px;
 }
 
+.timeline li {
+    padding: 50px;
+}
 
+.filterDiv {
+    display: none; /* Hidden by default */
+}
 
+.show {
+    display: block;
+}
 
 
 
