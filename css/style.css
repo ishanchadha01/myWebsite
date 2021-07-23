@@ -1,5 +1,6 @@
 body{
 	position: relative;
+    background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -64,7 +65,7 @@ p, span, a{
 /* header */
 #header{
 	min-height: 100vh;
-	background-image: url(ocean.png);
+	background-image: url(toronto.png);
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -224,6 +225,7 @@ p, span, a{
 }
 
 #about h2{
+    font-size: 40px;
 	margin-bottom: 30px;
 	color: #F5F5F5;
 }
@@ -237,7 +239,7 @@ p, span, a{
 }
 
 #attributesList{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 @media (max-width: 992px){
@@ -402,35 +404,12 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
 /* Variables */
 /* Base */
 #timeline-content {
-    background: #252827;
+    background: #2B2B2B;
     font-size: 16px;
     padding-top: 80px;
 	padding-bottom: 80px;
 }
-p {
-    font-weight: 300;
-}
-a {
-    color: #6c6d6d;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    letter-spacing: 0.3em;
-    font-size: 0.6em;
-    font-weight: 400;
-    background: #252727;
-    padding: 0.3rem 1rem;
-    margin: 1.9rem 0 0 0;
-    float: right;
-}
-a:hover {
-    color: white;
-    background: #004ffc;
-    border-bottom: 0.35em solid black;
-}
-strong {
-    font-weight: 600;
-}
+
 #timeline-content h1 {
     font-family: "Saira", sans-serif;
     letter-spacing: 1.5px;
@@ -944,14 +923,7 @@ footer h4{
   font-family: 'entypo', sans-serif;
 }
 
-body {
-  bottom: 0;
-  left: 0;
-  font-family: "futura pt";
-  font-size: 3px;
-  background: #f0f0f0;
-  padding-top: 10px;
-}
+
 .ObjectContainer h2{
   font-size:15px;
   position: relative;
