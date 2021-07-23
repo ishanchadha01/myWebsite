@@ -35,3 +35,24 @@ $("#contact input, #contact textarea").on('focusout', function(){
   }
 
 });
+
+var attrIdx = 1;
+const attributesList = [
+  " am a student at the Georgia Institute of Technology.",
+  " enjoy running and backpacking.",
+  " have a goal-oriented mindset.",
+  " seek adventures where I can find them.",
+  " am an avid gadgeteer."
+];
+window.onload = attrFade()
+
+function attrFade() {
+  const attrList = document.getElementById("attributesList")
+  setInterval(function() {
+    $.when($(".attributesList").fadeOut(1000)).done(function() {
+      document.getElementById("attributesList").innerHTML = `${attributesList[attrIdx % attributesList.length]}`;
+      attrIdx += 1;
+      $(".attributesList").fadeIn(1000);
+    });
+  }, 3000);
+}
