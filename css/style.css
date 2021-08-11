@@ -422,6 +422,13 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
     text-align: center;
 }
 /* Timeline */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 .timeline {
     border-left: 4px solid #004ffc;
     border-bottom-right-radius: 4px;
