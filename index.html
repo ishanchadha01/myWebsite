@@ -18,31 +18,19 @@
 		<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 	</head>
 
-	<body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+	<div class="navbar2">
+		<a class="nav-link" href="#about">Home</a>
+		<a class="nav-link" href="#blog">Interesting Stuff</a>
+		<a class="nav-link" href="#timeline-content">Portfolio</a>
+		<a class="nav-link" href="#contact">Contact</a>
+	</div>
 
-		<div id="header">
+	<body id="body">
 
-		    <div class="menu-overlay"></div>
-			<div class="menu">
-
-		        <ul class="nav-content" id="navigation">
-					<li><a class="nav-link" href="#about"></a></li>
-		        </ul>
-		    </div>
-
-			<div class="row align-items-center justify-content-center text-center">
-				<div>
-					<h1>Hi, I'm Ishan.</h1>
-					<hr>
-					<h4>Ishan Chadha</h4>
-					<div class="ObjectContainer">
-						<span class="entypo"></span>
-						<div id="red" class="Object"></div>
-						<a class="nav-link" href="#contact"><h2>Contact Me</h2></a>
-					</div>
-				</div>
-			</div>
-
+		<div class="ObjectContainer">
+			<span class="entypo"></span>
+			<div id="red" class="Object"></div>
+			<a class="nav-link" href="#contact"><h2>Contact Me</h2></a>
 		</div>
 
 		<div id="about" class="container-fluid">
@@ -52,24 +40,39 @@
 		                <img src="images/profile.png" class="rounded-circle" alt="picture">
 		            </div>
 		            <div class="col-md-9 col-sm-12 offset-md-1">
-		                <h2>Introduction</h2>
+		                <h2>Ishan Chadha</h2>
 						
 						<p class="beforeAttributesList">My name is Ishan, and I...</p>
 						<p class="attributesList" id="attributesList">study computer science at Georgia Tech as a BS/MS candidate.</p>
 		            </div>
 					<div class="col-md-9 col-sm-12 offset-md-3">
-						<p>I recently finished my internship at Capital One with 
-							the BespokeNLG team working on their voice assistant, Eno. I am starting my joint 
-							BS/MS at Georgia Tech this fall, focusing in Computational Perception and Robotics. Overall, I am 
+						<p>Last summer, I interned at Capital One with 
+							the BespokeNLG team, where I worked on their voice assistant, Eno. There, I designed new backend 
+							infrastructure, completely remodeling our graph database in PostgreSQL.
+							After this, I optimized our search and ranking by implementing mechanisms like n-gram
+							fuzzy search, semantic search, clustering with FAISS, and more.
+							<br>
+							<br>
+							I just finished my first semester of my joint Computer Science Masters at Georgia Tech,
+							where I am focusing in Computational Perception and Robotics. Overall, I am 
 							interested in researching how intelligent devices utilize hardware and 
 							software to interact through sensation, including computer vision, 
 							localization, natural language processing, and more.
+							<br>
+							<br>
+
 						</p>
 					</div>
 		        </div>
 		    </div>
+
+			<div id="blog">
+				<h1>Interesting Stuff</h1>
+				<h3>Coming soon!</h3> 
+			</div>
+
 			<div id="timeline-content">
-				<h1>My Work</h1>
+				<h1>Portfolio</h1>
 
 				<div id="myBtnContainer">
 					<button class="btn" onclick="filterSelection('all')"> Show all</button>
@@ -83,12 +86,12 @@
 					<div class="filterDiv education"><li class="event" id="date" data-date="Aug 2021 - May 2023">
 						<h3>M.S. at Georgia Institute of Technology</h3>
 						<p>
-							<i>Coursework:</i> Graduate Computer Vision*, Graduate NLP*
+							<i>Coursework:</i> Computer Vision, Robot Intelligence and Planning*
 							<br>
 							<i>GPA: </i> 4.0
 						</p>    
 					</li></div>
-					<div class="filterDiv experience"><li class="event" data-date="Aug - Dec 2021">
+					<div class="filterDiv experience"><li class="event" data-date="Aug 2021 - May 2022">
 						<h3>Robotics and Perception Teaching Assistant</h3>
 						<p>
 							Undergraduate teaching assistant for Robotics and Perception (CS 3630), 
@@ -101,12 +104,25 @@
 							<source src="images/3630.mp4" type="video/mp4">
 						  Your browser does not support the video tag.
 						  </video>
-						  <p><i>ROS Simulation of Particle Filter Homework Solution</i></p>
+						  <p><i>ROS Simulation of Particle Filter Homework</i></p>
 					</li></div>
-					<div class="filterDiv projects"><li class="event" data-date="Jul - Aug 2021">
+					<div class="filterDiv research"><li class="event" id="date" data-date="Jul 2021 - Present">
+						<h3>Sign Language Recognition Research - Adaptive Learning and ML Infrastructure</h3>
+						<p>Coming soon!
+						</p>  
+					</li></div>
+					<div class="filterDiv projects"><li class="event" data-date="Sep 2021 - Present">
 						<h3>Autonomous Driving Robot</h3>
 						<p>I am working on object detection in C++ for Raspberry Pi camera input and mapping output to motors through an Arduino and motor controller. I am also reading up on imitation learning and SLAM, as
 							well as setting up a Live Persistent Ubuntu USB for faster processing with ROS.
+						</p>
+						<a href="https://github.com/ishanchadha01/autonomous-robot">Link to Github</a>
+					</li></div>
+					<div class="filterDiv research"><li class="event" data-date="November 2021">
+						<h3>President's Undergraduate Research Award</h3>
+						<p>Competitively awarded funding for research
+							 at Georgia Tech for Spring 2022. Proposed research in the field of 
+							 gesture recognition with small team of other undergraduates.
 						</p>
 						<a href="https://github.com/ishanchadha01/autonomous-robot">Link to Github</a>
 					</li></div>

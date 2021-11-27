@@ -20,6 +20,24 @@ p, span, a{
     font-size: 16px;
 }
 
+@media (max-width: 576px){
+
+	#header{
+        background-size: initial !important;
+        background-position: top !important;
+	}
+
+	#header h1{
+        font-size: 40px !important;
+    }
+
+    #header h4{
+        font-size: 16px !important;
+    }
+
+	#portfolio h2{font-size: 25px !important;}
+}
+
 /* Scrollbar */
 
     /* width */
@@ -42,180 +60,33 @@ p, span, a{
         background: #159296;
     }
 
-@media (max-width: 576px){
 
-	#header{
-        background-size: initial !important;
-        background-position: top !important;
-	}
-
-	#header h1{
-        font-size: 40px !important;
-    }
-
-    #header h4{
-        font-size: 16px !important;
-    }
-
-	#portfolio h2{font-size: 25px !important;}
+/* Navbar */
+.navbar2 {
+    overflow: hidden;
+    background-color: #159280;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 100;
 }
 
-
-
-
-/* header */
-#header{
-	min-height: 100vh;
-	background-image: url(toronto.png);
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.menu-overlay{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.09);
-    z-index: 1;
-}
-
-.menu{
-    position: fixed;
-    top: 20px;
-    left: 10px;
-    z-index: 1;
-}
-
-
-.nav-content{
-	position: relative;
-    display: none;
-    padding: 0;
-    background: rgba(0, 0, 0, .8);
-}
-
-.nav-content > li{
-    list-style: none;
-    padding: 5px 20px;
-}
-
-.nav-content > li > a{
+/* Links inside the navbar */
+.navbar2 a {
+    float: left;
     display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    line-height: 32px;
-    color: #F5F5F5;
-    -webkit-transition: .3s;
-    transition: .3s;
-    letter-spacing: 1px;
-    font-size: 14px;
-    padding: 0 !important;
 }
 
-.nav-content > li > a:hover, .active{
-    color: #11ABB0 !important;
+/* Change background on mouse-over */
+.navbar2 a:hover {
+    background: #ddd;
+    color: black;
 }
-
-.toggler{
-    padding: 10px 15px;
-    background: rgba(0, 0, 0, .8);
-    display: block;
-    cursor: pointer;
-    width: min-content;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: -ms-min-content;
-    width: -o-min-content;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: #F5F5F5;
-    margin: 6px 0;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.nav-content #dropdown-menu{
-	display: none;
-	background: rgba(0, 0, 0, .8);
-	position: absolute;
-	top: 0;
-	left: 100%;
-	border-left: 1px solid rgba(0,0,0,.3);
-	padding: 10px 0;
-}
-
-.nav-content #dropdown-menu ul{
-	list-style-type: none;
-	padding: 0;
-}
-
-.nav-content #dropdown-menu ul li a{
-	color: #F5F5F5;
-}
-
-#dropdown{
-	position: relative;
-}
-
-#header .dropdown-item:hover, #header .dropdown-item.active{
-	color: #11ABB0;
-	background: transparent !important;
-}
-
-
-#header > .row{
-	min-height: 100vh;
-	width: 100vw;
-}
-
-#header h1{
-	font-size: 80px;
-	color: #F5F5F5;
-	border: none;
-	animation: fadein 3s ease-in;
-    -moz-animation: fadein 3s ease-in; /* Firefox */
-    -webkit-animation: fadein 3s ease-in; /* Safari and Chrome */
-    -o-animation: fadein 3s ease-in; /* Opera */
-}
-
-#header hr{
-	width: 200px;
-	border-color: #F5F5F5;
-}
-
-#header h4{
-	font-family: cursive;
-	font-size: 20px;
-	font-weight: bolder;
-	color: #F5F5F5;
-	border: none;
-	animation: fadein 8s ease-in-out;
-    -moz-animation: fadein 8s ease-in-out; /* Firefox */
-    -webkit-animation: fadein 8s ease-in-out; /* Safari and Chrome */
-    -o-animation: fadein 8s ease-in-out; /* Opera */
-}
-
+  
 
 /* about */
 
@@ -402,8 +273,39 @@ src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFiOHYr-vcC7h8MklGB
     src: url(https://fonts.gstatic.com/s/sairaextracondensed/v6/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrT27h2wpk.ttf) format('truetype');
 }
 
-/* Variables */
-/* Base */
+
+/* blog stuff */
+
+#blog {
+    background: #2B2B2B;
+    font-size: 16px;
+    padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#blog h1 {
+    font-family: "Saira", sans-serif;
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 400;
+    font-size: 2.4em;
+    padding: 50px;
+}
+
+#blog h3 {
+    font-family: "Saira", sans-serif;
+    color: white;
+    font-weight: 400;
+    padding: 50px;
+}
+
+#blog {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* Portfolio timeline */
 #timeline-content {
     background: #2B2B2B;
     font-size: 16px;
